@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@android:id/tabhost"
+    tools:context=".animal_TabHost">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TabWidget>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@android:id/tabcontent">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tabFood"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imgbtn1"
+                        android:src="@drawable/dogfood1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/dogfood2"
+                        android:layout_height="wrap_content"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/dogfood3"
+                        android:layout_height="wrap_content"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/dogfood4"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </ScrollView>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tabSignal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:src="@drawable/dogfood11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/dogfood12"
+                        android:layout_height="wrap_content"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/dogfood13"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </ScrollView>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tabTip"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:src="@drawable/dogfood21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/dogfood22"
+                        android:layout_height="wrap_content"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/dogfood23"
+                        android:layout_height="wrap_content"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/dogfood24"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+
+
+
+
+    </LinearLayout>
+
+</TabHost>
